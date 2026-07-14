@@ -95,7 +95,7 @@ export default function Dashboard() {
             {/* Circular Avatar */}
             <div className="h-20 w-20 rounded-full overflow-hidden border-2 border-white shadow-md">
               <img
-                src="/student_profile.png"
+                src="/newphoto.jpeg"
                 alt="Student Profile"
                 className="h-full w-full object-cover"
                 onError={(e) => {

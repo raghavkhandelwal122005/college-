@@ -46,7 +46,7 @@ export default function TopBar({ onMenuClick }) {
           <div className="flex items-center gap-1 ml-2 cursor-pointer">
             <div className="h-9 w-9 rounded-full overflow-hidden border border-slate-200 shrink-0">
               <img
-                src="/student_profile.png"
+                src="/newphoto.jpeg"
                 alt="Student Profile"
                 className="h-full w-full object-cover"
                 onError={(e) => {

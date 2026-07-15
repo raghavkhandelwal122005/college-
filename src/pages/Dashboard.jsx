@@ -6,15 +6,15 @@ export default function Dashboard() {
       {/* Alert Banners */}
       <div className="space-y-4">
         {/* Banner 1 */}
-        <div className="bg-[#FDF2F2] border-l-[6px] border-[#C2387D] py-4 px-6 flex items-center cursor-pointer hover:bg-[#FCE8E8] transition-colors">
-          <span className="text-[#C2387D] font-sans text-[15px] font-medium">
+        <div className="bg-[#FDF2F2] border-l-[6px] border-[#d99a9a] py-4 px-6 flex items-center cursor-pointer hover:bg-[#FCE8E8] transition-colors">
+          <span className="text-[#b04b4b] font-sans text-[15px] font-medium">
             Click here to submit Open Elective Choice (Semester V)
           </span>
         </div>
 
         {/* Banner 2 */}
-        <div className="bg-[#FDF2F2] border-l-[6px] border-[#C2387D] py-4 px-6 flex flex-col justify-center cursor-pointer hover:bg-[#FCE8E8] transition-colors">
-          <span className="text-[#C2387D] font-sans text-[15px] font-medium">
+        <div className="bg-[#FDF2F2] border-l-[6px] border-[#d99a9a] py-4 px-6 flex flex-col justify-center cursor-pointer hover:bg-[#FCE8E8] transition-colors">
+          <span className="text-[#b04b4b] font-sans text-[15px] font-medium">
             Your ABC ID / APAAR ID is 020187914249.
           </span>
           <span className="text-slate-500 font-sans text-xs mt-1">

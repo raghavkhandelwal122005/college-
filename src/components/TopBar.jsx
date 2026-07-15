@@ -2,29 +2,25 @@ import { Menu, Bell, Mail, ChevronDown } from "lucide-react";
 
 export default function TopBar({ onMenuClick }) {
   return (
-    <header className="h-16 shrink-0 bg-white border-b border-slate-200 flex items-center justify-between w-full z-30">
-      {/* Left Brand Section - aligns with desktop sidebar */}
-      <div className="hidden lg:flex items-center justify-center w-64 h-full border-r border-slate-200 shrink-0">
-        <span className="text-2xl font-bold tracking-wide text-slate-800 font-sans pl-2">
+    <header className="shrink-0 bg-white border-b border-slate-200 w-full z-30 flex flex-col justify-between">
+      {/* Row 1: Centered ERP Logo */}
+      <div className="w-full flex justify-center pt-4 pb-1">
+        <span className="text-[26px] font-medium tracking-normal text-[#1A202C] font-sans">
           ERP
         </span>
       </div>
 
-      {/* Right Content Section */}
-      <div className="flex-1 flex items-center justify-between px-4 h-full">
-        <div className="flex items-center gap-3">
-          {/* On mobile, show brand name, or just hamburger */}
-          <div className="lg:hidden font-semibold text-lg text-slate-800 mr-2">
-            ERP
-          </div>
-          <button
-            className="text-slate-600 hover:text-slate-800 p-1.5 rounded-lg hover:bg-slate-100 transition-colors"
-            onClick={onMenuClick}
-          >
-            <Menu size={20} />
-          </button>
-        </div>
+      {/* Row 2: Controls (Hamburger & Right Actions) */}
+      <div className="w-full flex items-center justify-between px-4 pb-3">
+        {/* Left: Hamburger menu */}
+        <button
+          className="text-slate-600 hover:text-slate-800 p-1.5 rounded-lg hover:bg-slate-100 transition-colors"
+          onClick={onMenuClick}
+        >
+          <Menu size={24} className="stroke-[2]" />
+        </button>
 
+        {/* Right: Notifications & Profile */}
         <div className="flex items-center gap-4 mr-2">
           {/* Mail Icon with badge 27 */}
           <button className="relative p-1 text-slate-600 hover:text-slate-800 transition-colors">
